@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Angular_Momentum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Force_Meter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gravity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harmonic_Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inclinometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kinetic_Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laws_of_Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Momentum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanical_Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Momentum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motion_Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal_Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potential_Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Projectile_Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rotational_Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spring_Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermal_Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tools_and_Instruments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work_Done_by_Constant_Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work_Done_by_Variable_Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Newton’s_First_Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Newton’s_Second_Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Newton’s_Third_Law"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesMotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#obeysLaw"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acceleration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#angle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#magnitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#measurementAccuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#velocity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ball_Thrown_Upward"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Block_Sliding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friction_RoughSurface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gravity_Earth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inclinometer_TypeA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Law_ForceEqualsMassTimesAcceleration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Law_Inertia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moving_Car"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rock_Held_Above_Ground"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spring_Scale"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Angular_Momentum"/>
+        <Class IRI="#Momentum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Force_Meter"/>
+        <Class IRI="#Tools_and_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction"/>
+        <Class IRI="#Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gravity"/>
+        <Class IRI="#Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harmonic_Motion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclinometer"/>
+        <Class IRI="#Tools_and_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kinetic_Energy"/>
+        <Class IRI="#Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Momentum"/>
+        <Class IRI="#Momentum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Motion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mechanical_Energy"/>
+        <Class IRI="#Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motion_Sensor"/>
+        <Class IRI="#Tools_and_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal_Force"/>
+        <Class IRI="#Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potential_Energy"/>
+        <Class IRI="#Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Projectile_Motion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotational_Motion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spring_Force"/>
+        <Class IRI="#Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tension"/>
+        <Class IRI="#Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermal_Energy"/>
+        <Class IRI="#Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work_Done_by_Constant_Force"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work_Done_by_Variable_Force"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Newton’s_First_Law"/>
+        <Class IRI="#Laws_of_Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Newton’s_Second_Law"/>
+        <Class IRI="#Laws_of_Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Newton’s_Third_Law"/>
+        <Class IRI="#Laws_of_Motion"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Angular_Momentum"/>
+        <Class IRI="#Linear_Momentum"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Force_Meter"/>
+        <Class IRI="#Inclinometer"/>
+        <Class IRI="#Motion_Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Friction"/>
+        <Class IRI="#Gravity"/>
+        <Class IRI="#Normal_Force"/>
+        <Class IRI="#Spring_Force"/>
+        <Class IRI="#Tension"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Harmonic_Motion"/>
+        <Class IRI="#Linear_Motion"/>
+        <Class IRI="#Projectile_Motion"/>
+        <Class IRI="#Rotational_Motion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Kinetic_Energy"/>
+        <Class IRI="#Mechanical_Energy"/>
+        <Class IRI="#Potential_Energy"/>
+        <Class IRI="#Thermal_Energy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Work_Done_by_Constant_Force"/>
+        <Class IRI="#Work_Done_by_Variable_Force"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Newton’s_First_Law"/>
+        <Class IRI="#Newton’s_Second_Law"/>
+        <Class IRI="#Newton’s_Third_Law"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Projectile_Motion"/>
+        <NamedIndividual IRI="#Ball_Thrown_Upward"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Linear_Motion"/>
+        <NamedIndividual IRI="#Block_Sliding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Friction"/>
+        <NamedIndividual IRI="#Friction_RoughSurface"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gravity"/>
+        <NamedIndividual IRI="#Gravity_Earth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclinometer"/>
+        <NamedIndividual IRI="#Inclinometer_TypeA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Newton’s_Second_Law"/>
+        <NamedIndividual IRI="#Law_ForceEqualsMassTimesAcceleration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Newton’s_First_Law"/>
+        <NamedIndividual IRI="#Law_Inertia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kinetic_Energy"/>
+        <NamedIndividual IRI="#Moving_Car"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Potential_Energy"/>
+        <NamedIndividual IRI="#Rock_Held_Above_Ground"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Force_Meter"/>
+        <NamedIndividual IRI="#Spring_Scale"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#angle"/>
+        <NamedIndividual IRI="#Ball_Thrown_Upward"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">45.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#velocity"/>
+        <NamedIndividual IRI="#Ball_Thrown_Upward"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acceleration"/>
+        <NamedIndividual IRI="#Block_Sliding"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#velocity"/>
+        <NamedIndividual IRI="#Block_Sliding"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#magnitude"/>
+        <NamedIndividual IRI="#Friction_RoughSurface"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#magnitude"/>
+        <NamedIndividual IRI="#Gravity_Earth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">9.81</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#measurementAccuracy"/>
+        <NamedIndividual IRI="#Inclinometer_TypeA"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#magnitude"/>
+        <NamedIndividual IRI="#Moving_Car"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#magnitude"/>
+        <NamedIndividual IRI="#Rock_Held_Above_Ground"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#measurementAccuracy"/>
+        <NamedIndividual IRI="#Spring_Scale"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#causes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#generatesMotion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measuredBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#obeysLaw"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causes"/>
+        <Class IRI="#Energy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesMotion"/>
+        <Class IRI="#Force"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuredBy"/>
+        <Class IRI="#Energy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuredBy"/>
+        <Class IRI="#Force"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuredBy"/>
+        <Class IRI="#Motion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#obeysLaw"/>
+        <Class IRI="#Force"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#obeysLaw"/>
+        <Class IRI="#Motion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causes"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesMotion"/>
+        <Class IRI="#Motion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measuredBy"/>
+        <Class IRI="#Tools_and_Instruments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#obeysLaw"/>
+        <Class IRI="#Laws_of_Motion"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#acceleration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#angle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#magnitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#measurementAccuracy"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#temperature"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#velocity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#acceleration"/>
+        <Class IRI="#Motion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#angle"/>
+        <Class IRI="#Projectile_Motion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duration"/>
+        <Class IRI="#Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#magnitude"/>
+        <Class IRI="#Energy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#magnitude"/>
+        <Class IRI="#Force"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#measurementAccuracy"/>
+        <Class IRI="#Tools_and_Instruments"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temperature"/>
+        <Class IRI="#Thermal_Energy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#velocity"/>
+        <Class IRI="#Motion"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#acceleration"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#angle"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duration"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#magnitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#measurementAccuracy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temperature"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#velocity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,547 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology/"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:physics_ontology="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#causes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#generatesMotion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#generatesMotion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#measuredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#measuredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#obeysLaw -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#obeysLaw">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Laws_of_Motion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#acceleration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#acceleration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#angle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#angle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Projectile_Motion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#magnitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#magnitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#measurementAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#measurementAccuracy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#temperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Thermal_Energy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#velocity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#velocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Angular_Momentum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Angular_Momentum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Momentum"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Momentum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force_Meter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force_Meter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Friction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Friction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Gravity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Gravity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Harmonic_Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Harmonic_Motion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Inclinometer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Inclinometer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Kinetic_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Kinetic_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Laws_of_Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Laws_of_Motion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Momentum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Momentum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Momentum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Motion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Mechanical_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Mechanical_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Momentum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Momentum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion_Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion_Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Normal_Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Normal_Force">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Potential_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Potential_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Projectile_Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Projectile_Motion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Rotational_Motion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Rotational_Motion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Spring_Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Spring_Force">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Thermal_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Thermal_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tools_and_Instruments"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work_Done_by_Constant_Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work_Done_by_Constant_Force">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work_Done_by_Variable_Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work_Done_by_Variable_Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work_Done_by_Variable_Force">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_First_Law -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_First_Law">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Laws_of_Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Second_Law -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Second_Law">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Laws_of_Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Third_Law -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Third_Law">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Laws_of_Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Ball_Thrown_Upward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Ball_Thrown_Upward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Projectile_Motion"/>
+        <physics_ontology:angle rdf:datatype="http://www.w3.org/2001/XMLSchema#double">45.0</physics_ontology:angle>
+        <physics_ontology:velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</physics_ontology:velocity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Block_Sliding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Block_Sliding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Motion"/>
+        <physics_ontology:acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</physics_ontology:acceleration>
+        <physics_ontology:velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</physics_ontology:velocity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Friction_RoughSurface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Friction_RoughSurface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Friction"/>
+        <physics_ontology:magnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</physics_ontology:magnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Gravity_Earth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Gravity_Earth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Gravity"/>
+        <physics_ontology:magnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.81</physics_ontology:magnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Inclinometer_TypeA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Inclinometer_TypeA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Inclinometer"/>
+        <physics_ontology:measurementAccuracy>High</physics_ontology:measurementAccuracy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Law_ForceEqualsMassTimesAcceleration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Law_ForceEqualsMassTimesAcceleration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Second_Law"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Law_Inertia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Law_Inertia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_First_Law"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Moving_Car -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Moving_Car">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Kinetic_Energy"/>
+        <physics_ontology:magnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</physics_ontology:magnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Rock_Held_Above_Ground -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Rock_Held_Above_Ground">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Potential_Energy"/>
+        <physics_ontology:magnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</physics_ontology:magnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Spring_Scale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Spring_Scale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force_Meter"/>
+        <physics_ontology:measurementAccuracy>Medium</physics_ontology:measurementAccuracy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Force_Meter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Inclinometer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Motion_Sensor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Friction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Gravity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Normal_Force"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Spring_Force"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Tension"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Harmonic_Motion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Linear_Motion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Projectile_Motion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Rotational_Motion"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Kinetic_Energy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Mechanical_Energy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Potential_Energy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Thermal_Energy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_First_Law"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Second_Law"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/physics_ontology#Newton’s_Third_Law"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
